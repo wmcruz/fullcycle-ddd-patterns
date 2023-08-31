@@ -19,6 +19,18 @@ export default class OrderItem {
         return this._price * this._quantity;
     }
 
+    changeName(name: string): void {
+        this._name = name;
+    }
+
+    changePrice(price: number): void {
+        this._price = price;
+    }
+
+    changeQuantity(quantity: number): void {
+        this._quantity = quantity;
+    }
+
     get id(): string {
         return this._id;
     }
